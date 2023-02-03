@@ -1,0 +1,15 @@
+html
+    head  
+        title= title
+    body 
+        h1 Hello Template & Jade 
+        ul 
+            -for(var i=0; i<5; i++)
+                li coding !!!
+        div= time 
+
+ 
+//    줄 바꿈은 새로운 태그의 시작을 말함 5줄에 h1 태그 미작성시 Hello를 태그로 인식
+//    들여쓰기는 태그를 감쌈
+//    jade에서 제공하는 for문은 -를 작성해주어야함
+//    변수 time은 app.js 의 53번째 줄에 인자로 넘겨준 값임
