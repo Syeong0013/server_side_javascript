@@ -40,7 +40,9 @@ app.post('/topic', (req, res) => {
         // 비동기 방식이므로 성공 결과는 여기 위치해야함 
         // send의 특징: send가 실행되면 다음 코드는 실행되지 않는다. return 과 비슷한 것인가?
         // title이 null 이면 에러
-        res.send('file Save Done');
+
+        // redirect 
+        res.redirect('/topic/' + req.body.title);
     });
 });
 
