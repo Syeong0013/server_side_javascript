@@ -13,6 +13,7 @@
     "connect-oriento": "^0.1.4",
     "express": "^4.18.2",
     "jade": "^1.11.0",
+    "node-mysql": "^0.4.2",
     "orientjs": "^3.0.11",
     "uglifyjs": "^2.4.11",
     "underscore": "^1.13.6"

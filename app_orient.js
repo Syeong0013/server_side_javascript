@@ -24,7 +24,7 @@ var db = server.use({
     useToken: true
 });
 
-// veiw 설정d
+// veiw 설정
 app.set('views', './views_orientdb');
 app.set('view engine', 'jade');
 
@@ -91,7 +91,7 @@ app.post('/topic/:id/edit', (req, res) => {
             }
         }).then((re) => {
             if(re > 0)
-            res.redirect('/topic/' + encodeURIComponent(id));
+                res.redirect('/topic/' + encodeURIComponent(id));
         });
 });
 
