@@ -10,14 +10,14 @@ var conn = mysql.createConnection({
 // var conn = mysql.createConnection('mysql://root:1234@localhost/study');
 
 // 권장 연결 방식
-// conn.connect(function(err) {
-//     if (err) {
-//         console.error('error connecting: ' + err.stack);
-//         return;
-//     }
-//     console.log(conn);
-//     console.log('connected as id ' + conn.threadId);
-// });
+conn.connect(function(err) {
+    if (err) {
+        console.error('error connecting: ' + err.stack);
+        return;
+    }
+    console.log(conn);
+    console.log('connected as id ' + conn.threadId);
+});
 
 // connect 안쓰고 query 로 연결 확립
 conn.query('Select * FROM study.test', (err, results, fields) => {
